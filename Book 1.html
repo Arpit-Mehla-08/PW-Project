@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* font-family: 'Roboto', sans-serif; */
+            background: linear-gradient(45deg,rgb(240, 139, 102),rgb(209, 79, 56),rgb(213, 138, 138),rgb(185, 49, 49),rgb(211, 96, 96),crimson);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #navTitle {
+            background-color: #EFDFBB;
+            color: #722F37;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        section {
+            display: flex;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        details summary {
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        details p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 750px) {
+            section {
+                place-items: center;
+                background: rgb(249, 247, 249);
+                display: block;
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            img {
+                width: 100%;
+                max-width: 280px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #navTitle {
+                font-size: 20px;
+            }
+
+            form {
+                padding: 15px;
+            }
+
+            form button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="navTitle">
+            Book Showcase: Book 1 Details
+        </div>
+        <div id="navLink" style="background-color: #e6cf9c; color: #722F37; margin-top: -8px; text-align: end;">
+            <a href="/index.html" style="text-decoration: none; color: #722F37; font-weight: 400; padding-right: 20px;">Home</a>
+        </div>
+    </nav>
+
+    <section>
+            <div class="col">
+                <h3>Book 1: Exploring Technology</h3>
+                <img src="public/images/book 1.jpg" alt="Book 1">
+
+            </div>
+
+            <div class="col">
+                <details>
+                    <summary>Genre</summary>
+                    <p>
+                        <ul>
+                            <li>Technology</li>
+                            <li>Education</li>
+                        </ul>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Index Page</summary>
+                    <p>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>Chapter 1: Overview</li>
+                            <li>Chapter 2: Advanced Concept</li>
+                        </ul>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Author</summary>
+                    <p>Jane Doe, John Smith</p>
+                </details>
+
+                <details>
+                    <summary>Overview</summary>
+                    <p>This book provides detailed insights into technology and communication skills for professionals and students.</p>
+                </details>
+
+                <details>
+                    <summary>Competitive Exam Relevance</summary>
+                    <p>Highly recommended for IT and communication-related government exams.</p>
+                </details>
+
+                <details>
+                    <summary>Purchase Links</summary>
+                    <p>
+                        <ul>
+                            <li><a href="https://www.amazon.in/Manufacturing-Engineering-Technology-4e-Kalpakjian/dp/8177581708" target="_blank">Amazon</a></li>
+                            <li><a href="https://www.flipkart.com/" target="_blank">Flipkart</a></li>
+                        </ul>
+                    </p>
+                </details>
+            </div>
+    </section>
+    <footer style="place-items: center; padding-bottom: 20px;">
+        <div style="width: 40%; justify-items: center;">
+            <h3>Feedback Form</h3>
+            <div class="d-flex justify-content-center" >
+                <form action=""  style="justify-content: center;" >
+                    <label >Name</label>
+                    <input type="text" name="Name" required>
+    
+                    <label>Feedback</label>
+                    <textarea name="Feedback" required></textarea>
+
+                    <button type="submit"> Feedback</button>
+                </form>
+            </div>
+
+    </footer>
+</body>
+
+</html>
